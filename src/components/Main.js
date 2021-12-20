@@ -8,7 +8,7 @@ export default function Main() {
     return (
         <>
         <Header/>
-        <Pagination RenderComponent={Blog} pageLimit={5} dataLimit={2} />
+        <Pagination RenderComponent={Blog} pageLimit={5} />
         <Footer/>
         </>
     );
