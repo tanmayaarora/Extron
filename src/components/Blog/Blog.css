@@ -4,8 +4,28 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    width: 27%;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 10px auto;
+    margin-bottom: 35px;
     padding: 15px 10px;
-    background: #aaa;
+    background: rgb(151, 255, 110);
   }
+
+@media only screen and (max-width: 768px){
+  .blog {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .blog {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .blog {
+    width: 55%;
+  }
+}
