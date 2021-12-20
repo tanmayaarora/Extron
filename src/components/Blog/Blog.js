@@ -2,11 +2,7 @@ import './Blog.css'
 
 export default function Blog(props) {
     const { id, title, description, name } = props.data;
-    // const row = {
-    //     display: 'flex',
-    //     width: '30%',
-    //     'margin-bottom':'15px'
-    //   };
+ 
     return (
         <div key={id} className='blog'>
             <h1>{title}</h1>
