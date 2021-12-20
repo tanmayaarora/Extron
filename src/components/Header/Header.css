@@ -10,14 +10,18 @@
 
 @media only screen and (max-width: 599px) {
     .padLeft {
-        padding-left: 0em;
+        padding-left: 13em;
     }
-    
 }
 
 @media only screen and (min-width: 600px) and (max-width: 850px) {
     .padLeft {
-        padding-left: 21em;
+        padding-left: 26em;
+    }  
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+    .padLeft {
+        padding-left: 40em;
     }
-    
 }
