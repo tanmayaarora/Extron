@@ -1,0 +1,27 @@
+.div1 {
+    display: grid;
+    height: 150px;
+    margin: auto;
+}
+
+.padLeft {
+    padding-left: 23rem;
+}
+
+@media only screen and (max-width: 599px) {
+    .padLeft {
+        padding-left: 13rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+    .padLeft {
+        padding-left: 18rem;
+    }  
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
+    .padLeft {
+        padding-left: 40rem;
+    }
+}
