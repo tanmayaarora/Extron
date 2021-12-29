@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  display: inline;
+  pointer-events: none;
+}
+
+nav {
+  background: rgb(214, 206, 206);
+  height: 8vmin;
+}
+nav div {
+  margin: auto;
+}
+
+@media (min-width: 426px) {
+  nav {
+    display: flex;
+    flex: 1 1 auto;
+    height: 12vmin;
+  }
+}
+
+@media (max-width: 434px) {
+  nav{
+    height: 44vmin;
+  }
+  nav div {
+    margin: auto;
+  }
+}
+
+@media (max-width: 369px) {
+  nav{
+    height: 51vmin;
+  }
+  nav div {
+    margin: auto;
+  }
+}
+
+@media (max-width: 317px) {
+  nav{
+    height: 58vmin;
+  }
+  nav div {
+    margin: auto;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
