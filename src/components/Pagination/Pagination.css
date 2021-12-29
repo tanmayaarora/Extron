@@ -1,0 +1,102 @@
+.dropbtn {
+  background-color: #0a0d25;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  background: rgb(47, 53, 45);
+  color: greenyellow;
+  padding: 0.75rem 2.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content button:hover {background-color: #929292}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0a0d25;
+  border: 0.18rem solid black;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .paginationItem {
+    background: rgb(235, 118, 118);
+    border: 2px solid #666;
+    padding: 10px 10px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .paginationItem span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .prev,
+  .next {
+    background: #888888;
+    border: none;
+    padding: 10px;
+    color: blue;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .first,
+  .last {
+    background: #888888;
+    border: none;
+    padding: 10px;
+    color: blue;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    margin: 20px 10px;
+    cursor: pointer;
+  }
+  
+  .paginationItem.active {
+    border: 3px solid rgb(50, 101, 160);
+    color: rgb(255, 1, 1);
+    pointer-events: none;
+  }
+  
+  .prev.disabled,
+  .next.disabled,
+  .first.disabled,
+  .last.disabled {
+    pointer-events: none;
+    box-shadow: none;
+    color: #999;
+  }
