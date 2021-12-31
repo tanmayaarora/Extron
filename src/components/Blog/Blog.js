@@ -1,4 +1,4 @@
-import './Blog.css'
+import './Blog.scss'
 
 export default function Blog(props) {
     const { id, title, description, name } = props.data;
