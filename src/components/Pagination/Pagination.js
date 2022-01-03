@@ -108,17 +108,6 @@ export default function Pagination({ RenderComponent, pageLimit }) {
               Previous
             </button>
       
-            {/* show page numbers */}
-            {/* {getPaginationGroup().map((item, index) => (
-              <button
-                key={index}
-                onClick={changePage}
-                className={`paginationItem ${currentPage === item ? 'active' : null}`}
-              >
-                <span>{item}</span>
-              </button>
-            ))} */}
-      
             {/* next button */}
             <button
               onClick={goToNextPage}
@@ -126,6 +115,7 @@ export default function Pagination({ RenderComponent, pageLimit }) {
             >
               Next
             </button>
+            
             <button
             onClick={()=>setCurrentPage(pages)}
             className={`last ${currentPage === pages ? 'disabled' : ''}`}>
