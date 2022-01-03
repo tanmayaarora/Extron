@@ -1,0 +1,21 @@
+@import "_commonStyles";
+
+form {
+    background: url("../../../public/bgimage.jpg");
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    div {
+        padding: 1rem;
+    }
+    button {
+        margin: 2.5rem;
+        background: gray;
+        color: blue;
+        padding: 0.2rem 3rem;
+        font-size: 1.5rem;
+    }
+    button:hover {
+        background: #ccc;
+    }
+}
