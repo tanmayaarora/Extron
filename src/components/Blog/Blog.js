@@ -1,5 +1,4 @@
 import './Blog.scss'
-import './_grid.scss'
 
 export default function Blog(props) {
     const { id, title, description, name, imgsource } = props.data;
