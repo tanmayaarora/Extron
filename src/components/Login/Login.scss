@@ -1,10 +1,8 @@
-@import "_commonStyles";
-
 form {
     background: url("../../../public/bgimage.jpg");
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: auto;
+    height: 25.4rem;
     div {
         padding: 1rem;
     }
@@ -17,5 +15,6 @@ form {
     }
     button:hover {
         background: #ccc;
+        cursor: pointer;
     }
 }
