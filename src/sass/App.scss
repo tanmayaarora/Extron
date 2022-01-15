@@ -1,0 +1,49 @@
+.App {
+  color: #000C66;
+  text-align: center;
+  }
+  
+nav {
+    height: 8vmin;
+    position:sticky;
+    top:0;
+    div {
+        margin: auto;
+    }
+  }
+  
+@media (min-width: 426px) {
+    nav {
+      display: flex;
+      flex: 1 1 auto;
+      height: 12vmin;
+    }
+  }
+  
+@media (max-width: 434px) {
+    nav{
+      height: 44vmin;
+      div {
+          margin: auto;
+      }
+    }
+  }
+  
+@media (max-width: 369px) {
+    nav{
+      height: 51vmin;
+      div {
+        margin: auto;
+      }
+    }
+  }
+  
+@media (max-width: 317px) {
+    nav{
+      height: 58vmin;
+      div {
+        margin: auto;
+      }
+    }
+  }
+  
