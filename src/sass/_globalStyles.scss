@@ -1,4 +1,4 @@
-$myBackgroundColor: #0a0d25;
+$myBackgroundColor: ##7EC8E3;
 
 @mixin myStyles {
   background-color: $myBackgroundColor;
@@ -19,7 +19,7 @@ $myBackgroundColor: #0a0d25;
 .special {
     display: inline;
     position: relative;
-    color: blue;
+    color: #338BA8;
     padding: 0rem 22rem;
     font-size: 2rem;
   }
