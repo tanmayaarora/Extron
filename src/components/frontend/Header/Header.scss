@@ -1,0 +1,11 @@
+@import "../../../sass/globalStyles";
+
+.div1 {
+    display: grid;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    div {
+        height: 6vmin;
+        padding: 1rem;
+    }
+}
