@@ -1,0 +1,112 @@
+@import "../../../sass/globalStyles";
+@import "../../../sass/grid";
+
+.dropbtn {
+    @include myStyles;
+    padding: 0.59rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    button {
+        background: #ADD8E6;
+        color: #000C66;
+        padding: 0.75rem 2.3rem;
+        min-width: 6rem;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+      }
+    button:active {
+      background: #888888;
+    }
+    button:hover {
+      background-color: #7EC8E3;
+      cursor: pointer;
+    }
+  }
+  
+.dropdown:hover {
+    .dropdown-content {
+        display: block;
+    }
+    .dropbtn {
+        background-color: $myBackgroundColor;
+        border: 0.18rem solid black;
+    }
+}
+
+.active.DL1,
+.active.DL2,
+.active.DL5,
+.active.DL10 {
+  border: 1px solid #888;
+  color: #888;
+  pointer-events: none;
+}
+  
+.Main{
+    padding: 1.17rem 0 0 0;
+  }
+
+.dataContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dataContainer:after,
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationItem.active {
+  border: 1px solid #888;
+  color: #888;
+  pointer-events: none;
+}
+
+@mixin paginationButtonStyles {
+    background: #ADD8E6;
+    border: none;
+    padding: 10px;
+    color: blue;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    @include paginationButtonStyles;
+    margin: 0px 10px;
+}
+
+.first,
+.last {
+    @include paginationButtonStyles;
+    margin: 20px 10px;
+}
+
+.prev.disabled,
+.next.disabled,
+.first.disabled,
+.last.disabled {
+    pointer-events: none;
+    box-shadow: none;
+    color: #999;
+  }
